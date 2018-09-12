@@ -1,7 +1,17 @@
+
+
 <%= render "layouts/errors", :object => @photo %>
 
-<%= form_for @photo do |f| %>
+<!-- <%= form_for @photo, url: photos_path, html: { multipart: true } do |form| %>
+  <%= form.file_field :image %>
+  <%= form.submit %>
+<% end %> -->
+
+<%= form_for @photo, html: { multipart: true } do |f| %>
+  <%= f.file_field :image %>
   <%= f.label :title %>
   <%= f.text_field :title %>
   <%= f.submit %>
 <% end %>
+
+<h1>jdfkljl</h1>
