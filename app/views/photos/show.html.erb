@@ -1,7 +1,5 @@
 <h1>photo show</h1>
 <h1><%= @photo.title %></h1>
 
-<% if file? %>
-  <%= User.photos.each do %>
-  <%= image_tag @photo.image.url %>
-<% end %>
+
+  <%= image_tag @photo.image.url(:medium) %>
