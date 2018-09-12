@@ -21,4 +21,30 @@ Things you may want to cover:
 
 * Deployment instructions
 
+<hr />
+## Setup/Contribution Requirements
+
+1. Clone the repo
+1. Install ImageMagick
+```
+brew install ImageMagick
+```
+1. From the root of the repo run the following commands:
+```
+rake db:create
+```
+1. Populate the database
+```
+rake db:migrate
+```
+1. run the application
+```
+rails s
+```
+1. Copy and paste the localhost file from the command prompt into your browser's url
+```
+localhost:3000
+```
+<hr />
+
 * ...
