@@ -15,3 +15,14 @@
  */
 
  @import "bootstrap";
+
+ nav {
+   background: black;
+   opacity: .5;
+   height: 60px;
+ }
+
+ nav h2 {
+   color: white;
+   font-size: 15px;
+ }
