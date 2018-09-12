@@ -5,7 +5,7 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version 2.5.0 or above
 
 * System dependencies
 
@@ -28,6 +28,10 @@ Things you may want to cover:
 1. Install ImageMagick
 ```
 brew install ImageMagick
+```
+1. Run Bundle Install:
+```
+bundle install
 ```
 1. From the root of the repo run the following commands:
 ```
