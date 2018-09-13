@@ -10,6 +10,9 @@ Photo.destroy_all
 Comment.destroy_all
 User.destroy_all
 
+User.create!(email: 'jadeanomaly@yahoo.com', password: 'password', admin: true)
+User.create!(email: 'eshulldesign@gmail.com', password: 'password', admin: true)
+
 10.times do |index|
   User.create!(email: Faker::Internet.email,
     password: Faker::Lorem.characters(10)
@@ -19,12 +22,12 @@ User.destroy_all
     )
 end
 
-30.times do |index|
-  Photo.create!(title: Faker::Name.name,
-    user_id: Faker::Number.between(1, 10),
-    image: Faker::LoremFlickr.image_file_name)
-    # image: Faker::LoremFlickr.unique.image_file_name)
-end
+# 30.times do |index|
+#   Photo.create!(title: Faker::Name.name,
+#     user_id: Faker::Number.between(1, 10),
+#     image: Faker::LoremFlickr.image_file_name)
+#     # image: Faker::LoremFlickr.unique.image_file_name)
+# end
 
 Photo.all.each do |photo|
     20.times do |index|
