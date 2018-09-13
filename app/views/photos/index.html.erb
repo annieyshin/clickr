@@ -1,7 +1,14 @@
-<h1>Photos</h1>
-
-<ul>
-  <% @photos.each do |photo| %>
-    <li><%= link_to photo.title, photo_path(photo) %></li>
-  <% end %>
-</ul>
+<div class="container">
+  <h1>Photos</h1>
+  <hr>
+  <table>
+    <tbody>
+      <% @photos.each do |photo| %>
+        <tr>
+          <td><%= link_to photo.title, photo_path(photo) %></td>
+          <td class="small"><%= image_tag photo.image.url(:medium) %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
