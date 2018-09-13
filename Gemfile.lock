@@ -56,6 +56,7 @@ GEM
       sass (>= 3.3.4)
     builder (3.2.3)
     byebug (10.0.2)
+    cancancan (2.2.0)
     climate_control (0.2.0)
     coderay (1.1.2)
     coffee-rails (4.2.2)
@@ -275,6 +276,7 @@ DEPENDENCIES
   bootsnap (>= 1.1.0)
   bootstrap-sass (~> 3.3.7)
   byebug
+  cancancan (~> 2.0)
   coffee-rails (~> 4.2)
   devise
   faker
